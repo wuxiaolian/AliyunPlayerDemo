@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32DECB67539024B093EA04A2 /* Pods_AliyunPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DC7792E126DDB8441C1B9E /* Pods_AliyunPlayerDemo.framework */; };
 		F36B05F820A03761006710A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B05F720A03761006710A6 /* AppDelegate.m */; };
 		F36B05FB20A03761006710A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B05FA20A03761006710A6 /* ViewController.m */; };
 		F36B05FE20A03761006710A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36B05FC20A03761006710A6 /* Main.storyboard */; };
@@ -34,7 +35,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F36B063320A038D3006710A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B063420A038D3006710A6 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A0DC7792E126DDB8441C1B9E /* Pods_AliyunPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliyunPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6F4676ED28037D1EEF1859 /* Pods-AliyunPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunPlayerDemo/Pods-AliyunPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E97DB951B960F19EEA388C37 /* Pods-AliyunPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunPlayerDemo/Pods-AliyunPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F36B05F320A03761006710A6 /* AliyunPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliyunPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36B05F620A03761006710A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F36B05F720A03761006710A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DECB67539024B093EA04A2 /* Pods_AliyunPlayerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97E9FF2D831213B7C65BA506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC7792E126DDB8441C1B9E /* Pods_AliyunPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D7B0D86A11BB1BFECF2044 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F4676ED28037D1EEF1859 /* Pods-AliyunPlayerDemo.debug.xcconfig */,
+				E97DB951B960F19EEA388C37 /* Pods-AliyunPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F36B05EA20A03761006710A6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +130,8 @@
 				F36B060E20A03761006710A6 /* AliyunPlayerDemoTests */,
 				F36B061920A03761006710A6 /* AliyunPlayerDemoUITests */,
 				F36B05F420A03761006710A6 /* Products */,
+				C5D7B0D86A11BB1BFECF2044 /* Pods */,
+				97E9FF2D831213B7C65BA506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +186,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F36B061F20A03761006710A6 /* Build configuration list for PBXNativeTarget "AliyunPlayerDemo" */;
 			buildPhases = (
+				CE059D494F4E87A3116ABAED /* [CP] Check Pods Manifest.lock */,
 				F36B05EF20A03761006710A6 /* Sources */,
 				F36B05F020A03761006710A6 /* Frameworks */,
 				F36B05F120A03761006710A6 /* Resources */,
+				F36B063320A038D3006710A6 /* Embed Frameworks */,
+				F36B063420A038D3006710A6 /* Embed PlugIns */,
+				A36197AA5520A2C950B2CC83 /* [CP] Embed Pods Frameworks */,
+				FCC397A3AD58A23D7651E200 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +311,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A36197AA5520A2C950B2CC83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliyunPlayerDemo/Pods-AliyunPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE059D494F4E87A3116ABAED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC397A3AD58A23D7651E200 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliyunPlayerDemo/Pods-AliyunPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F36B05EF20A03761006710A6 /* Sources */ = {
@@ -428,9 +528,15 @@
 		};
 		F36B062020A03761006710A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6F4676ED28037D1EEF1859 /* Pods-AliyunPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79YAW92JE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliyunPlayerDemo",
+				);
 				INFOPLIST_FILE = AliyunPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliyunPlayerDemo;
@@ -441,9 +547,15 @@
 		};
 		F36B062120A03761006710A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97DB951B960F19EEA388C37 /* Pods-AliyunPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79YAW92JE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliyunPlayerDemo",
+				);
 				INFOPLIST_FILE = AliyunPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AliyunPlayerDemo;

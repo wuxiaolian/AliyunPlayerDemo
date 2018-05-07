@@ -41,6 +41,7 @@
     }
     [self.mediaPlayer play];
     [self addPlayerObserver];
+    NSLog(@"1.0");
 
 }
 #pragma mark - add NSNotification
